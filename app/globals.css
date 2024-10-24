@@ -18,3 +18,16 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
 }
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+
+.pers{
+  perspective: 500px;
+}
+
+.h2p{
+  left: calc(50% - 130px);
+}

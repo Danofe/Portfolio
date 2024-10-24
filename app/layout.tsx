@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -10,6 +11,8 @@ import Contact from './contact'
 import AboutTitle from '@/components/AboutTitle'
 import ProjectTitle from '@/components/ProjectTitle'
 import ContactTitle from '@/components/ContactTitle'
+import Nametitle from '@/components/Nametitle'
+import homebilde from '../public/home2.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,21 +30,15 @@ export default function RootLayout({
   
     <html lang="en">
       <body className={inter.className}>
-        <div className='m-3 mx-20 ml-20 '>
-        <section className=''>
+        <div className=''>
+        <section className='h-screen snap-start'>
+          <img src={homebilde.src} alt="dano" className='shadow-inner absolute w-full h-full shadow-black object-cover' />
           <Navbar />
+          <Nametitle />
         </section>
-        <section className='flex h-screen mb-96'>
-          <Home />
-        </section>
-        <AboutTitle />
-        <About />
-
-        <section className='flex h-screen'>
-          <Project />
-        </section>
-        <section className='flex h-screen'>
-          <Contact />
+        <section> 
+        
+        <Project />
         </section>
         </div>
         </body>

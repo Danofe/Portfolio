@@ -51,23 +51,7 @@ function Nametitle() {
                 <span className='text-Bcolor'> DEVELOPER</span>
                 </motion.div>
             </h1>
-        </div>
-        <div className='w-full'>
-            <img
-             src={homebilde.src} alt="dano" className='shadow-inner shadow-black w-full h-5/6 object-cover'
-             />
-        </div>     
-        
-             <div className='absolute bottom-10'>
-              <motion.div className='flex items-center justify-center h-20 w-36 cursor-pointer'
-              transition={{duration: 0.4, repeat: Infinity, repeatType: "reverse", ease: "easeInOut"}}
-              animate={{y: 20, opacity: 0.6}}
-              >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-        </svg>
-              </motion.div>
-             </div>
+        </div> 
     </div> 
 )
 }
