@@ -36,8 +36,10 @@ export default function RootLayout({
           <Navbar />
           <Nametitle />
         </section>
+        <section className=''>
+          <About />
+        </section>
         <section> 
-        
         <Project />
         </section>
         </div>

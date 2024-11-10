@@ -8,8 +8,8 @@ function About() {
     const ref = React.useRef(null)
     const inView = useInView(ref, {once: true})
   return (
-    <div className='w-screen mt-4 flex-col justify-center'>
-      <div ref={ref} className='flex '>  
+    <div className='w-screen h-screen mt-4 flex-col snap-center'>
+      <div ref={ref} className='flex justify-center '>  
       <div className='w-1/2 flex items-center justify-end'>
         <div className=' p-5 font-bold text-2xl text-blue-400 text-start'>
             <motion.p 
@@ -56,7 +56,7 @@ function About() {
             I'm a full-stack developer with a passion for creating <br />
             beautiful and functional web applications. I have a <br />
             Bachelor's degree in IT Informationsystems from <br />
-            University of South-Eastern Norway.
+            the University of South-Eastern Norway.
             </motion.p>
         </div>
         </div>
