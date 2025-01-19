@@ -15,54 +15,54 @@ function About() {
             whileInView={{opacity: 1}}
             transition={{duration: 1, delay: 1}}
             viewport={{once: true}} className='justify-items-center w-1/3 ml-20'>
-          <img  src='home2.png' className=' rounded-full shadow-lg'>
+          <img  src='mimg.jpg' className=' rounded-full shadow-2xl object-contain overflow-hidden'>
 
           </img>
           
           </motion.div>  
-      <div className='w-1/2 flex items-center justify-center'>
-        <div className=' p-5 font-bold text-2xl text-blue-400 text-start'>
+      <div className='w-1/2 flex  items-center justify-center'>
+        <div className=' p-5 font-bold bg-Tcolor/20 shadow-md rounded text-2xl text-blue-400 text-start'>
             <motion.p 
             initial={{opacity: 0 , x: -500}}
             whileInView={{opacity: 1 , x: 0}}
             transition={{duration: 0.9, type: 'spring', stiffness: 100, delay: 0.5}}
             viewport={{once: true}}
-            className='p-1'>Name: <span className="text-Tcolor"> Daniel Feili </span></motion.p>
+            className='p-1'>Name: <span className="text-Bcolor"> Daniel Feili </span></motion.p>
             <br />
             <motion.p 
             initial={{opacity: 0 , x: -500}}
             whileInView={{opacity: 1.7 , x: 0}}
             transition={{duration: 0.9, type: 'spring', stiffness: 100 , delay: 0.5}}
             viewport={{once: true}}
-            className='p-1'>Age: <span className="text-Tcolor"> 22 </span> </motion.p>
+            className='p-1'>Age: <span className="text-Bcolor"> 22 </span> </motion.p>
             <br />
             <motion.p
             initial={{opacity: 0 , x: -500}}
             whileInView={{opacity: 1 , x: 0}}
             transition={{duration: 0.9, type: 'spring', stiffness: 100 , delay: 0.5}}
             viewport={{once: true}}
-            className='p-1'>Location: <span className="text-Tcolor"> Norway, Kristiansand </span></motion.p>
+            className='p-1'>Location: <span className="text-Bcolor"> Norway, Kristiansand </span></motion.p>
             <br />
             <motion.p
             initial={{opacity: 0 , x: -500}}
             whileInView={{opacity: 1 , x: 0}}
             transition={{duration: 0.9, type: 'spring', stiffness: 100 , delay: 0.5}}
             viewport={{once: true}}
-            className='p-1'>Occupation: <span className="text-Tcolor"> Full-stack Developer </span></motion.p>
+            className='p-1'>Occupation: <span className="text-Bcolor"> Full-stack Developer </span></motion.p>
             <br />
             <motion.p 
             initial={{opacity: 0 , x: -500}}
             whileInView={{opacity: 1 , x: 0}}
             transition={{duration: 0.9, type: 'spring', stiffness: 100 , delay: 0.5}}
             viewport={{once: true}}
-            className='p-1'>Education: <span className="text-Tcolor"> Bachelor in IT & Informationsystems </span></motion.p>
+            className='p-1'>Education: <span className="text-Bcolor"> Bachelor in IT & Informationsystems </span></motion.p>
             <br />
             <motion.p
             initial={{opacity: 0 , x: -500}}
             whileInView={{opacity: 1 , x: 0}}
             transition={{duration: 0.7, delay: 0.5}}
             viewport={{once: true}}
-            className='text-Tcolor'> Hello, I'm Daniel. A Software Developer from Norway<br />
+            className='text-Bcolor'> Hello, I'm Daniel. A Software Developer from Norway<br />
             I'm a full-stack developer with a passion for creating <br />
             beautiful and functional web applications. I have a <br />
             Bachelor's degree in IT Informationsystems from <br />
