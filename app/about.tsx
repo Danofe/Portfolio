@@ -9,8 +9,18 @@ function About() {
     const inView = useInView(ref, {once: true})
   return (
     <div className='w-screen h-screen mt-4 flex-col snap-center'>
-      <div ref={ref} className='flex justify-center '>  
-      <div className='w-1/2 flex items-center justify-end'>
+      <div ref={ref} className='flex justify-center items-center w-screen h-full'>
+        <motion.div             
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 1, delay: 1}}
+            viewport={{once: true}} className='justify-items-center w-1/3 ml-20'>
+          <img  src='home2.png' className=' rounded-full shadow-lg'>
+
+          </img>
+          
+          </motion.div>  
+      <div className='w-1/2 flex items-center justify-center'>
         <div className=' p-5 font-bold text-2xl text-blue-400 text-start'>
             <motion.p 
             initial={{opacity: 0 , x: -500}}
@@ -24,7 +34,7 @@ function About() {
             whileInView={{opacity: 1.7 , x: 0}}
             transition={{duration: 0.9, type: 'spring', stiffness: 100 , delay: 0.5}}
             viewport={{once: true}}
-            className='p-1'>Age: <span className="text-Tcolor"> 21 </span> </motion.p>
+            className='p-1'>Age: <span className="text-Tcolor"> 22 </span> </motion.p>
             <br />
             <motion.p
             initial={{opacity: 0 , x: -500}}
@@ -45,7 +55,7 @@ function About() {
             whileInView={{opacity: 1 , x: 0}}
             transition={{duration: 0.9, type: 'spring', stiffness: 100 , delay: 0.5}}
             viewport={{once: true}}
-            className='p-1'>Education: <span className="text-Tcolor"> Bachelor in IT informationsystems </span></motion.p>
+            className='p-1'>Education: <span className="text-Tcolor"> Bachelor in IT & Informationsystems </span></motion.p>
             <br />
             <motion.p
             initial={{opacity: 0 , x: -500}}

@@ -42,6 +42,9 @@ export default function RootLayout({
         <section> 
         <Project />
         </section>
+        <section>
+          <Contact />
+        </section>
         </div>
         </body>
     </html>
