@@ -13,6 +13,7 @@ import ProjectTitle from '@/components/ProjectTitle'
 import ContactTitle from '@/components/ContactTitle'
 import Nametitle from '@/components/Nametitle'
 import homebilde from '../public/home2.png'
+import Skills from './skills'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,6 +39,9 @@ export default function RootLayout({
         </section>
         <section className=''>
           <About />
+        </section>
+        <section>
+          <Skills />
         </section>
         <section> 
         <Project />

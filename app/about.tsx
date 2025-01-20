@@ -21,7 +21,7 @@ function About() {
           
           </motion.div>  
       <div className='w-1/2 flex  items-center justify-center'>
-        <div className=' p-5 font-bold bg-Tcolor/20 shadow-md rounded text-2xl text-blue-400 text-start'>
+        <div className=' p-5 font-bold overflow-hidden bg-Tcolor/20 shadow-md rounded text-2xl text-blue-400 text-start'>
             <motion.p 
             initial={{opacity: 0 , x: -500}}
             whileInView={{opacity: 1 , x: 0}}

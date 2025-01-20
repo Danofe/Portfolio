@@ -20,15 +20,15 @@ const Navbar = () => {
                    <motion.div  animate={{ opacity: hover ? 10:0 , width: hover ? 54 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 <div className='flex-col items-center'>
-                    <Link href="/" onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> ABOUT </Link>
+                    <Link href="/about" onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> ABOUT </Link>
                    <motion.div  animate={{ opacity: hover2 ? 100:0 , width: hover2 ? 63 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 <div className='flex-col items-center'>
-                    <Link href="/" onMouseEnter={() => setHover3(true)} onMouseLeave={() => setHover3(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> PROJECTS </Link>
+                    <Link href="/projects" onMouseEnter={() => setHover3(true)} onMouseLeave={() => setHover3(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> PROJECTS </Link>
                    <motion.div  animate={{ opacity: hover3 ? 100:0 , width: hover3 ? 95 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 <div className='flex-col items-center'>
-                    <Link href="/" onMouseEnter={() => setHover4(true)} onMouseLeave={() => setHover4(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> CONTACT </Link>
+                    <Link href="/contact" onMouseEnter={() => setHover4(true)} onMouseLeave={() => setHover4(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> CONTACT </Link>
                    <motion.div  animate={{ opacity: hover4 ? 100:0 , width: hover4 ? 88 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 </div>
