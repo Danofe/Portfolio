@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 body {
-  background-color: #858587;
+  background-color:#858587 ;
 }
 #f2f2f2
+
 html {
   overflow: scroll;
   overflow-x: hidden;

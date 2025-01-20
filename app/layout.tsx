@@ -14,6 +14,7 @@ import ContactTitle from '@/components/ContactTitle'
 import Nametitle from '@/components/Nametitle'
 import homebilde from '../public/home2.png'
 import Skills from './skills'
+import Homebutton from '@/components/homebutton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,23 +33,29 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className=''>
-        <section className='h-screen snap-start'>
+          
+        <section id='home' className='h-screen snap-center'>
           <img src={homebilde.src} alt="dano" className='shadow-inner absolute w-full h-full shadow-black object-cover' />
           <Navbar />
           <Nametitle />
         </section>
-        <section className=''>
+        
+
+        </div>
+        <div>
+        <section id='about' className='h-screen snap-center'>
           <About />
         </section>
-        <section>
+        <section id='skills' className='h-screen snap-center'>
           <Skills />
         </section>
-        <section> 
+        <section id='projects' className=''> 
         <Project />
         </section>
-        <section>
+        <section id='contact' className='h-screen snap-center'>
           <Contact />
         </section>
+        <Homebutton />
         </div>
         </body>
     </html>

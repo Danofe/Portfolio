@@ -1,6 +1,6 @@
 'use client'
 import React, {useState} from 'react'
-import Link from 'next/link'
+import { Link } from "react-scroll/modules"
 import { animate, motion } from "framer-motion"
 
 
@@ -16,19 +16,19 @@ const Navbar = () => {
             <div className=" w-1/3 flex p-3 items-center">
                 <div className="w-full justify-between flex items-center mx-12">
                 <div className='flex-col items-center'>
-                    <Link href="/" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> HOME </Link>
+                    <Link to="home" spy={true} duration={500} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className=' text-Bcolor hover:text-blue-400 duration-150 cursor-pointer text-lg font-semibold'> HOME </Link>
                    <motion.div  animate={{ opacity: hover ? 10:0 , width: hover ? 54 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 <div className='flex-col items-center'>
-                    <Link href="/about" onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> ABOUT </Link>
+                    <Link to="about" spy={true}  duration={500}  onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)} className=' text-Bcolor hover:text-blue-400 duration-150 cursor-pointer text-lg font-semibold'> ABOUT </Link>
                    <motion.div  animate={{ opacity: hover2 ? 100:0 , width: hover2 ? 63 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 <div className='flex-col items-center'>
-                    <Link href="/projects" onMouseEnter={() => setHover3(true)} onMouseLeave={() => setHover3(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> PROJECTS </Link>
+                    <Link to="projects" spy={true} duration={500}  onMouseEnter={() => setHover3(true)} onMouseLeave={() => setHover3(false)} className=' text-Bcolor hover:text-blue-400 duration-150 cursor-pointer text-lg font-semibold'> PROJECTS </Link>
                    <motion.div  animate={{ opacity: hover3 ? 100:0 , width: hover3 ? 95 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 <div className='flex-col items-center'>
-                    <Link href="/contact" onMouseEnter={() => setHover4(true)} onMouseLeave={() => setHover4(false)} className=' text-Bcolor hover:text-blue-400 duration-150 text-lg font-semibold'> CONTACT </Link>
+                    <Link to="contact" spy={true} duration={500} onMouseEnter={() => setHover4(true)} onMouseLeave={() => setHover4(false)} className=' text-Bcolor hover:text-blue-400 duration-150 cursor-pointer text-lg font-semibold'> CONTACT </Link>
                    <motion.div  animate={{ opacity: hover4 ? 100:0 , width: hover4 ? 88 : 0}} transition={{}} className='h-1.5 bg-blue-400 rounded'> </motion.div>
                 </div>
                 </div>

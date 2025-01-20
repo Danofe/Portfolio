@@ -8,8 +8,8 @@ function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
                 <motion.div 
                         initial={{opacity: 0 , x: -500}}
                         whileInView={{opacity: 1 , x: 0}}
-                        transition={{duration: 0.9, type: 'spring', stiffness: 100, delay: 0.5}}
-                        viewport={{once: true}}
+                        transition={{duration: 0.9, type: 'spring', stiffness: 100,}}
+                        
                         className='flex justify-center h-20 shadow-inner items-center'
             >
                 <h1 className='pr-10 font-bold text-Bcolor text-2xl'>
@@ -54,7 +54,7 @@ export default function Skills() {
 
 
   return (
-    <div className='w-screen h-screen flex justify-center snap-center'>
+    <div className='w-screen h-screen flex justify-center'>
     <div className='w-3/4 flex-row justify-center'>
         <div className='w-full flex justify-center '>
         <motion.div className='w-1/2 mt-10 h-24 rounded shadow-md bg-Tcolor/20'>
@@ -64,13 +64,13 @@ export default function Skills() {
 
         </div>
         <div className='flex w-full '>
-        <motion.div className='flex-row overflow-hidden m-3 rounded border-2 border-Tcolor/20 bg-Tcolor/20 w-2/4 mt-60 h-3/4 '>
+        <motion.div className='flex-row overflow-hidden m-3 rounded border-2 shadow-lg border-Tcolor/20 bg-Tcolor/20 w-2/4 mt-40 h-3/4 '>
             {skills.map((skill) => (
               <SkillsComponent id={skill.id} bilde={skill.bilde} />
             ))}
 
         </motion.div>
-        <motion.div className='flex-row w-2/4 m-3 rounded border-2 border-Tcolor/20 bg-Tcolor/20 overflow-hidden mt-60 h-3/4 '>
+        <motion.div className='flex-row w-2/4 m-3 rounded border-2 shadow-lg border-Tcolor/20 bg-Tcolor/20 overflow-hidden mt-40 h-3/4 '>
         {skills2.map((skill) => (
               <SkillsComponent id={skill.id} bilde={skill.bilde} />
             ))}
