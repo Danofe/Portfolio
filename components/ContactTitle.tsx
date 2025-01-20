@@ -3,31 +3,18 @@ import React from 'react'
 import { motion, useInView } from "framer-motion"
 
 function ContactTitle() {
-    const ref = React.useRef(null)
-    const inView = useInView(ref, {once: true})
+
 
   return (
-    <motion.div ref={ref}
-        
-    style={{
-        transform: inView ? "none" : "translateX(-1500px)",
-        opacity: inView ? 1 : 0,
-        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-      }}
-        
-        >
-    <div className='w-full h-14 flex justify-center bg-blue-400 items-center'>
+    <div className='sticky top-5 m-5'>
         <motion.div 
-            style={{
-                transform: inView ? "none" : "translateX(-1500px)",
-                opacity: inView ? 1 : 0,
-                transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s"
-              }}
+            initial={{opacity: 0 }}
+            whileInView={{opacity: 1 }}
+            transition={{duration: 0.2, type: 'spring', stiffness: 100, delay: 0.1}}
         >
-        <h1 className='text-4xl font-extrabold text-white'>CONTACT</h1>
+        <h1 className='text-3xl font-extrabold text-Bcolor'>CONTACT ME</h1>
         </motion.div>
     </div>
-    </motion.div>
    
     
   )
