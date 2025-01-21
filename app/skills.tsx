@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion"
+import Image from 'next/image'
 
 function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
 
@@ -15,9 +16,9 @@ function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
                 <h1 className='pr-10 font-bold text-Bcolor text-2xl'>
                 {`${id}`}
                 </h1>
-                <img src={`/${bilde}.png`} className='w-[10%] overflow-hidden'>
+                <Image alt='Image is bugged' src={`/${bilde}.png`} className='w-[10%] overflow-hidden'>
                 
-                </img>
+                </Image>
 
             </motion.div>
     )

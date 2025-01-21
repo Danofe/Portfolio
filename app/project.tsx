@@ -3,12 +3,13 @@ import React, {useRef, useState} from 'react'
 import { motion, useScroll, useSpring, useTransform, MotionValue, delay } from "framer-motion"
 import ProjectTitle from '@/components/ProjectTitle'
 import { link } from 'fs'
+import Image from 'next/image'
 
 function useParallax(value: MotionValue<number>, distance: number) {
     return useTransform(value, [0, 1], [-distance, distance])
 }
 
-function Image({id, color, beskrivelse, bilde, link}: {id: string, color: string, beskrivelse: string, bilde: string, link: string,}) {
+function Img({id, color, beskrivelse, bilde, link}: {id: string, color: string, beskrivelse: string, bilde: string, link: string,}) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({target: ref})
   const y = useParallax(scrollYProgress, 300)
@@ -18,7 +19,7 @@ function Image({id, color, beskrivelse, bilde, link}: {id: string, color: string
   <section style={{background: color }} className={`h-screen flex justify-center relative items-center snap-center perspective-1200`} >
     <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className='group flex rounded shadow-sm bg-[#212830] w-full cursor-default justify-center relative max-h-[90vh] m-[20px] overflow-hidden'>
     <motion.div ref={ref} animate={{x: hover ? -250 : 0, width: hover ? 500 : 300, height: hover ? 500 : 300}} className=' rounded-md w-[500px] h-[500px] relative m-[20px] overflow-hidden'>
-      <motion.img src={`/${bilde}.jpg`}  alt='Project' className='group-hover:rounded group-hover:shadow-md rounded-lg duration-500 absolute top-0 left-0 right-0 bottom-0 object-contain' />
+      <motion.div  className='group-hover:rounded group-hover:shadow-md rounded-lg duration-500 absolute top-0 left-0 right-0 bottom-0 object-contain' ><Image src={`/${bilde}.jpg`}  alt='Project'></Image> </motion.div>
     </motion.div>
     <motion.h2 className=' m-0 left-[calc(50%+130px)] absolute top-[28%] text-Bcolor font-bold text-6xl tracking-tighter leading-5  'initial={{opacity: 1}} style={{y}} animate={{opacity: hover ? 100 : 100, x: hover ? 0 : 200}}>{`${id}`}</motion.h2>
     <motion.div style={{y}} animate={{opacity: hover ? 50 : 0, width: hover ? 450 : 0}} transition={{duration: hover ? 1 : 0, delay: hover ? 0.3 : 0}} className='rounded left-[calc(50%+130px)] h-1 shadow-sm absolute top-[37%] bg-blue-400'></motion.div>
@@ -45,7 +46,7 @@ export default function Project() {
     <>
     
     {projects.map((project) => (
-      <Image key={project.id} id={project.id} color={project.color} beskrivelse={project.beskrivelse} bilde={project.bilde} link={project.link} />
+      <Img key={project.id} id={project.id} color={project.color} beskrivelse={project.beskrivelse} bilde={project.bilde} link={project.link} />
     ))}
     
     <motion.div style={{scaleX}} className=' fixed left-0 right-0 h-1 bottom-24 bg-blue-400' />

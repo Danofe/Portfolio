@@ -16,6 +16,7 @@ import homebilde from '../public/home2.png'
 import Skills from './skills'
 import Homebutton from '@/components/homebutton'
 import Title from '@/components/Title'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,7 +37,7 @@ export default function RootLayout({
         <div className=''>
           
         <section id='home' className='h-screen snap-center'>
-          <img src={homebilde.src} alt="dano" className='shadow-inner absolute w-full h-full shadow-black object-cover' />
+          <Image alt='Image is bugged' src={homebilde.src} className='shadow-inner absolute w-full h-full shadow-black object-cover' />
           <Navbar />
           <Nametitle />
         </section>
