@@ -67,13 +67,13 @@ export default function Skills() {
         <div className='flex w-full h-4/5 '>
         <motion.div className='flex-row overflow-hidden m-3 rounded border-2 shadow-lg border-Tcolor/20 bg-[#212830] w-2/4 mt-40 h-3/4 '>
             {skills.map((skill) => (
-              <SkillsComponent id={skill.id} bilde={skill.bilde} />
+              <SkillsComponent key={skill.id} id={skill.id} bilde={skill.bilde} />
             ))}
 
         </motion.div>
         <motion.div className='flex-row w-2/4 m-3 rounded border-2 shadow-lg border-Tcolor/20 bg-[#212830] overflow-hidden mt-40 h-3/4 '>
         {skills2.map((skill) => (
-              <SkillsComponent id={skill.id} bilde={skill.bilde} />
+              <SkillsComponent key={skill.id} id={skill.id} bilde={skill.bilde} />
             ))}
         </motion.div>
 
