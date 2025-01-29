@@ -10,7 +10,7 @@ function Homebutton() {
 
         <div className='flex w-full h-full justify-end'>
             <Link to="home" spy={true} className='cursor-pointer w-16 h-16 flex justify-center items-center hover:scale-105 duration-200 bg-Bcolor shadow-md rounded-full'>
-             <Image alt='Image is bugged' src='./Public/homeicon.png' fill={true} className='w-1/2'></Image>
+             <Image alt='Image is bugged' src='/homeicon.png' width={300} height={300} className='w-1/2'></Image>
             </Link>
         </div>
     </div>

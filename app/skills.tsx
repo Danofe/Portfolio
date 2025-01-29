@@ -16,7 +16,7 @@ function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
                 <h1 className='pr-10 font-bold text-Bcolor text-2xl'>
                 {`${id}`}
                 </h1>
-                <Image alt='Image is bugged' src={`./Public/${bilde}.png`} fill={true} className='w-[10%] overflow-hidden'>
+                <Image alt='Image is bugged' src={`/${bilde}.png`} width={300} height={300}  className='w-[10%] overflow-hidden'>
                 
                 </Image>
 
