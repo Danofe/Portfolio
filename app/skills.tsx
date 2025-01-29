@@ -2,7 +2,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import Image from 'next/image'
-import tailwind from "../public/Tailwind.png"
 
 function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
 
@@ -29,14 +28,14 @@ function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
 export default function Skills() {
 
     const skills = [
-          {id: "Tailwind", bilde: "tailwind",},
-          {id: "React",bilde: "react",},
+          {id: "Tailwind", bilde: "Tailwind",},
+          {id: "React",bilde: "React",},
           {id: "Javascript",bilde: "js",},
           {id: "Typescript",bilde: "ts",},
           {id: "Angular",bilde: "angular",},
           {id: "Next",bilde: "next",},
           {id: "Bootstrap",bilde: "bootstrap",},
-          {id: "Blazor",bilde: "blazor",},
+          {id: "Blazor",bilde: "Blazor",},
           {id: "MongoDB",bilde: "mongodb",},
     ]
 
@@ -44,12 +43,12 @@ export default function Skills() {
         {id: ".NET",bilde: "net",},
         {id: "C#",bilde: "c",},
         {id: "Go",bilde: "go",},
-        {id:"Java",bilde: "java",},
-        {id: "Kotlin",bilde: "kotlin",},
+        {id:"Java",bilde: "Java",},
+        {id: "Kotlin",bilde: "Kotlin",},
         {id: "Python",bilde: "python",},
         {id: "Rust",bilde: "rust",},
         {id: "Firebase",bilde: "firebase",},
-        {id: "Azure",bilde: "azuredir",},
+        {id: "Azure",bilde: "AzureDir",},
 
 
     ]

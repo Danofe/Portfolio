@@ -1,3 +1,5 @@
+const { truncate } = require('node:fs')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     basePath: "/Portfolio",
