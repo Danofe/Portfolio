@@ -37,7 +37,7 @@ export default function RootLayout({
         <div className=''>
           
         <section id='home' className='h-screen snap-center'>
-          <Image alt='Image is bugged' src={homebilde.src} className='shadow-inner absolute w-full h-full shadow-black object-cover' />
+          <Image alt='Image is bugged' src={homebilde.src} fill className='shadow-inner absolute w-full h-full shadow-black object-cover' />
           <Navbar />
           <Nametitle />
         </section>

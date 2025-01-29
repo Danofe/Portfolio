@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import Homebutton from '@/components/homebutton'
+import mimg from "../public/mimg.jpg"
 
 function About() {
     return (
@@ -14,7 +15,7 @@ function About() {
                     transition={{ duration: 1, delay: 0.3 }}
                     viewport={{ once: true }}
                     className='flex justify-center w-full lg:w-1/3 p-5'>
-                    <Image src='mimg.jpg' className='rounded-full shadow-2xl object-contain overflow-hidden w-64 md:w-80 lg:w-full' alt='Image is bugged' />
+                    <Image src={mimg.src} fill className='rounded-full shadow-2xl object-contain overflow-hidden w-64 md:w-80 lg:w-full' alt='Image is bugged' />
                 </motion.div>  
                 <div className='w-full lg:w-1/2 flex justify-center'>
                     <div className='p-5 font-bold overflow-hidden bg-[#212830] shadow-md rounded text-lg md:text-2xl text-blue-400 text-start'>
