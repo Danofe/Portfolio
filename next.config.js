@@ -2,8 +2,8 @@ const { truncate } = require('node:fs')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/Portfolio",
-    assetPrefix: "/public/",
+    basePath: "/",
+    assetPrefix: "/public/images/",
     output: "export",  // <=== enables static exports
     reactStrictMode: false,
 }
