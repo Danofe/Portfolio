@@ -3,9 +3,9 @@ const { truncate } = require('node:fs')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     basePath: "/Portfolio",
-    assetPrefix: "/Portfolio/public/",
+    assetPrefix: "/public/",
     output: "export",  // <=== enables static exports
-    reactStrictMode: true,
+    reactStrictMode: false,
 }
 
 module.exports = {
