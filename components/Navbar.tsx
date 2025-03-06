@@ -8,6 +8,7 @@ const Navbar = () => {
     const [hover2, setHover2] = useState(false)
     const [hover3, setHover3] = useState(false)
     const [hover4, setHover4] = useState(false)
+    const [hidden, setHidden] = useState(false)
 
   return (
     <div className="sticky top-0 w-full">
@@ -47,6 +48,8 @@ const Navbar = () => {
             </div>
         </div>
     </div>
+    
+
   )
 }
 
