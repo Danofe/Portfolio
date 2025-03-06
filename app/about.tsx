@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import Homebutton from '@/components/homebutton'
-import mimg from "../public/images/mimg.jpg"
+import mimg from "/images/mimg.jpg"
 
 function About() {
     return (
