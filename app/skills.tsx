@@ -16,7 +16,7 @@ function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
                 <h1 className='pr-10 font-bold text-Bcolor text-2xl'>
                 {`${id}`}
                 </h1>
-                <Image alt='Image is bugged' src={`./images/${bilde}.png`} width={400} height={400}  className='w-[10%] overflow-hidden'>
+                <Image alt='Image is bugged' src={`/images/${bilde}.png`} width={400} height={400}  className='w-[10%] overflow-hidden'>
                 
                 </Image>
 
@@ -28,7 +28,7 @@ function SkillsComponent({id, bilde}: {id: string, bilde: string}) {
 export default function Skills() {
 
     const skills = [
-          {id: "Tailwind", bilde: "Tailwind",},
+          {id: "Tailwind", bilde: "tailwind2",},
           {id: "React",bilde: "React",},
           {id: "Javascript",bilde: "js",},
           {id: "Typescript",bilde: "ts",},

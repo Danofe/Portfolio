@@ -12,8 +12,9 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 w-full">
-        <div className="w-full flex flex-col md:flex-row items-center pb-3 px-4 md:px-12">
-            <div className="w-full md:w-1/3 flex p-3 items-center justify-center md:justify-start">
+        <div className="w-full flex bg-black/20 flex-col md:flex-row items-center  px-4 md:px-12">
+            
+            <div className="w-full  md:w-1/3 flex p-3 items-center justify-center md:justify-start">
                 <div className="w-full flex justify-between md:mx-12">
                     <div className='flex flex-col items-center'>
                         <Link to="home" spy={true} duration={500} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className='text-Bcolor hover:text-blue-400 duration-150 cursor-pointer text-lg font-semibold'> HOME </Link>
