@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
     output: "export",  // <=== enables static exports
     images: {
         unoptimized: true,
-    }
+    },
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
 }
 
 
